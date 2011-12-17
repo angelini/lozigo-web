@@ -1,0 +1,24 @@
+{
+  "name": "lozigo-web",
+  "description": "A web interface to view and search logs on a distributed network. Built with lozigo"
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SoapyIllusions/lozigo-web.git" 
+  },
+  "author": "Alex Angelini <alex.louis.angelini@gmail.com>",
+  "main": "server",
+  "engines": {
+    "node": ">= 0.4.10"
+  },
+  "dependencies": {
+    "connect": ">= 1.8.3",
+    "lozigo": ">= 0.0.2"
+  },
+  "licenses" : [
+    {
+      "type" : "MIT", 
+      "url" : "https://github.com/SoapyIllusions/lozigo-web/raw/master/LICENSE"
+    }
+  ]
+}
