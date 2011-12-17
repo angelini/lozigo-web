@@ -1,0 +1,8 @@
+{
+  "client_name": "Example",
+  "server_port": "3020",
+  "logs": [
+    { "name": "First Log",
+      "path": "/Users/alexangelini/Local/lozigo-web/logs/log1.txt" }
+  ]
+}

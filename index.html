@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lozigo Web</title>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link href="/assets/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="main">
+    <div class="page-header">
+      <h1>
+        Lozigo Web <small>Live logs from a distributed system</small>
+      </h1>
+    </div>
+  </div>
+
+  <script id="search-tmpl" type="text/template">
+    <label for="query">Search: </label>
+    <input type="text" class="query" name="query"/>
+    <input type="submit" class="btn"/>
+    <div class="results"></div>
+  </script>
+
+  <script id="search-results-tmpl" type="text/template">
+    <div class="close">x</div>
+    <pre>{{text}}</pre>
+  </script>
+
+  <script id="log-tmpl" type="text/template">
+    <div class="title">
+      <div class="name">{{id}}</div>
+      <div class="path">{{path}}</div>
+    </div>
+    <pre class="lines"></pre>
+  </script>
+
+  <!-- Third-Party Libraries (Order matters) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/jquery-1.7.1.js" data-optimize="js"></script>
+  <script src="/assets/js/underscore-1.2.2.js" data-optimize="js"></script>
+  <script src="/assets/js/backbone-0.5.3.js" data-optimize="js"></script>
+  <script src="/assets/js/mustache.js" data-optimize="js"></script>
+  
+  <!-- Application core (Order matters) -->
+  <script src="/src/application.js"></script>
+
+  <!-- Modules (Order does not matter) -->
+  <script src="/src/modules/log.js"></script>
+  <script src="/src/modules/search.js"></script>
+</body>
+</html>

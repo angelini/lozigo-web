@@ -1,0 +1,55 @@
+#main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.search {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.search label {
+  width: auto;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search .results {
+  margin-top: 20px;
+}
+
+.search .close {
+  position: absolute;
+  right: 10px;
+  top: 55px;
+  cursor: pointer;
+}
+
+.log .title {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.log .name {
+  float: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.log .path {
+  float: right;
+  font-size: 15px;
+}
+
+.log .lines {
+  height: 300px;
+  padding: 15px;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+  overflow-y: scroll
+}
