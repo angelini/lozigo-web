@@ -9,7 +9,7 @@
       this.entries.push(entry);
       this.trigger('newLine', entry.data);
 
-      if(entry.keywords.indexOf('error') !== -1) {
+      if (entry.keywords.indexOf('error') !== - 1) {
         app.notify();
       }
     }
@@ -21,7 +21,7 @@
     newEntry: function(entry) {
       var log = this.get(entry.log.name);
 
-      if(!log) {
+      if (!log) {
         log = new Log.Model({
           id: entry.log.name,
           path: entry.log.path
@@ -57,13 +57,13 @@
       var scroll = false;
       var text = $lines.text();
 
-      if(lines.scrollTop + lines.offsetHeight - lines.scrollHeight >= 0) {
+      if (lines.scrollTop + lines.offsetHeight - lines.scrollHeight >= 0) {
         scroll = true;
       }
 
       $lines.text(text + '>  ' + line + '\n');
-      
-      if(scroll) {
+
+      if (scroll) {
         lines.scrollByLines(400);
       }
     }
@@ -99,3 +99,4 @@
   });
 
 })(app.module('log'));
+

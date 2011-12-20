@@ -40,8 +40,7 @@ var app = {
       logs.newEntry(entry);
     });
 
-    $('#main').append(searchView.render().el)
-              .append(logsView.render().el);
+    $('#main').append(searchView.render().el).append(logsView.render().el);
   },
 
   notify: (function() {
